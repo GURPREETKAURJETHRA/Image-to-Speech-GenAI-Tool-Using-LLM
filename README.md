@@ -1,4 +1,4 @@
-# Image to Speech GenAI Tool Using LLM ♨️
+# 🖼️Image to Speech GenAI Tool Using LLM 🌟♨️
 AI tool that generates an Audio short story based on the context of an uploaded image by prompting a GenAI LLM model, Hugging Face AI models together with OpenAI &amp; LangChain. Deployed on Streamlit & HuggingFace Cloud Separately.
 
 ## 📢Run App with Streamlit Cloud
@@ -9,14 +9,17 @@ AI tool that generates an Audio short story based on the context of an uploaded 
 
 [Launch App On HuggingFace Space](https://huggingface.co/spaces/GurpreetKJ/Image-to-SpeechStory_GenAI-Tool)
 
+
 ## 🎯 Demo:
 ![Demo 1: Couple Test Image Output](img-audio/CoupleOutput.jpg)
-![Demo 1: Couple Test Audio Output](img-audio/CoupleAudio.wav)
+You can listen respective audio file of this test image on respective `img-audio` folder 
+
 
 
 ## 📈System Design
 
 ![system-design](img/system-design.drawio.png)
+
 
 ## 🏆Approach
 An app that uses Hugging Face AI models to generate text from an image, which then generates audio from the text.
@@ -29,9 +32,11 @@ Execution is divided into 3 parts:
 - **Story to speech:**
   a text-to-speech transformer model ([espnet/kan-bayashi_ljspeech_vits](https://huggingface.co/espnet/kan-bayashi_ljspeech_vits)) is used to convert the generated short story into a voice-narrated audio file
 - A user interface is built using streamlit to enable uploading the image and playing the audio file
+  
 
 ![Demo 2: Family Test Image Output](img-audio/FamilyOutput.jpg)
-![Demo 2: Family Test Audio Output](img-audio/FamilyAudio.wav)
+You can listen respective audio file of this test image on respective `img-audio` folder 
+
 
 ## 🌟Requirements
 
@@ -43,6 +48,7 @@ Execution is divided into 3 parts:
 - openai
 - requests
 - streamlit
+  
 
 ## 🚀Usage
 
@@ -76,6 +82,7 @@ Set up your OpenAI API key & Hugging Face Token by creating a .env file in the r
 Run the Streamlit app:
 
 `streamlit run app.py`
+
 
 ## ©️ License
 
